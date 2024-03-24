@@ -53,7 +53,7 @@ nav {
     text-decoration: none;
     padding: 0.2rem 0.4rem;
     color: black;
-    font-size: 18px;
+    font-size: 1.7rem;
 }
 
 .nav-bar li a:hover {
@@ -68,7 +68,6 @@ a{
 }
 
 /* Cosas generales */
-
 .title-main{
     margin-top: 15%;
     margin-bottom: 21%;
@@ -76,15 +75,101 @@ a{
     font-size: 4rem;
 }
 .title-all-text{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1.8rem;
 }
 .text-articles{
     font-size: 1.7rem;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
-
 .why-choose-text{
     margin-right: 20%;
     margin-left: 20%;
 }
+/* Estilos específicos para el formulario */
+.contact {
+    margin-top: 5%; /* Ajustar según sea necesario */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Sombra ligera */
+}
+
+.contact label {
+    display: block; /* Para que cada etiqueta esté en una línea */
+    margin-bottom: 0.5rem; /* Espacio inferior entre etiquetas y campos */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    width: 100%; /* Ancho completo */
+    padding: 0.8rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.6rem; /* Tamaño de fuente */
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus {
+    outline: none; 
+    border-color: rgb(253, 172, 66);
+}
+
+.contact input[type="submit"] {
+    background-color: rgb(253, 172, 66); /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 0.8rem 2rem; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.6rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+.contact input[type="submit"]:hover {
+    background-color: rgb(189, 109, 4); /* Color de fondo al pasar por encima */
+}
+
+/* Animaciones */
+
+
+.title-main,
+.title-all-text {
+    animation: fadeInUp 1s ease forwards; 
+}
+
+
+.text-articles,
+.why-choose-text {
+    animation: fadeIn 1s ease forwards; 
+}
+
+.nav-bar li a,
+.contact input[type="submit"] {
+    animation: fadeIn 1s ease forwards; 
+}
+
+/* Definición de la animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comenzar con opacidad cero */
+        transform: translateY(-20px); /* Desplazamiento hacia arriba */
+    }
+    to {
+        opacity: 1; /* Opacidad completa */
+        transform: translateY(0); /* Sin desplazamiento */
+    }
+}
+
+/* Definición de la animación de entrada para los títulos */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Comenzar con opacidad cero */
+        transform: translateY(50px); /* Desplazamiento hacia arriba */
+    }
+    to {
+        opacity: 1; /* Opacidad completa */
+        transform: translateY(0); /* Sin desplazamiento */
+    }
+}
+
