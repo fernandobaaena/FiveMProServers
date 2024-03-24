@@ -211,6 +211,10 @@ img{
     .text-articles {
       margin-bottom: 5%; /* Reducir el espacio entre los elementos de texto */
     }
+    .title-all-text{
+        font-size: 2.5rem;
+        margin-top: 5%;
+    }
   }
   
   /* Media query para tabletas y pantallas medianas */
