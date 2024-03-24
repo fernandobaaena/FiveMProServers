@@ -38,7 +38,9 @@ nav {
     height: 9svh; 
     background-color: rgb(253, 172, 66);
 }
-
+.color-letter{
+    color: red;
+}
 .nav-bar {
     list-style: none;
     margin: 0;
@@ -85,6 +87,15 @@ a{
 .why-choose-text{
     margin-right: 20%;
     margin-left: 20%;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 105px;
+
 }
 /* Estilos específicos para el formulario */
 .contact {
@@ -221,9 +232,5 @@ a{
       font-size: 1.5rem; /* Ajustar el tamaño del texto de navegación */
     }
   }
-  
-  /* Media query para pantallas grandes (por ejemplo, monitores de escritorio) */
-  @media only screen and (min-width: 1025px) {
-    /* Puedes agregar estilos específicos para pantallas grandes si es necesario */
-  }
+
   
