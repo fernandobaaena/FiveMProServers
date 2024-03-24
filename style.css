@@ -173,3 +173,57 @@ a{
     }
 }
 
+/* Media queries*/
+
+/* Estilos generales */
+
+/* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media only screen and (max-width: 600px) {
+    .title-main {
+      font-size: 2.5rem; /* Reducir el tamaño del título principal */
+      margin-bottom: 10%; /* Reducir el espacio entre el título principal y el siguiente elemento */
+    }
+  
+    .nav-bar {
+      height: auto; /* Ajustar la altura de la barra de navegación para que se ajuste al contenido */
+      flex-direction: column; /* Cambiar la dirección de los elementos de la barra de navegación a columna */
+    }
+  
+    .nav-bar li {
+      margin-bottom: 1rem; /* Agregar espacio entre los elementos de la barra de navegación */
+    }
+  
+    .nav-bar li a {
+      font-size: 1.2rem; /* Reducir el tamaño del texto de navegación */
+    }
+  
+    .text-articles {
+      margin-bottom: 5%; /* Reducir el espacio entre los elementos de texto */
+    }
+  }
+  
+  /* Media query para tabletas y pantallas medianas */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .title-main {
+      margin-bottom: 15%; /* Ajustar el espacio entre el título principal y el siguiente elemento */
+    }
+  
+    .nav-bar {
+      height: auto; /* Ajustar la altura de la barra de navegación para que se ajuste al contenido */
+      flex-direction: row; /* Restablecer la dirección de los elementos de la barra de navegación a fila */
+    }
+  
+    .nav-bar li {
+      margin-right: 1rem; /* Agregar espacio entre los elementos de la barra de navegación */
+    }
+  
+    .nav-bar li a {
+      font-size: 1.5rem; /* Ajustar el tamaño del texto de navegación */
+    }
+  }
+  
+  /* Media query para pantallas grandes (por ejemplo, monitores de escritorio) */
+  @media only screen and (min-width: 1025px) {
+    /* Puedes agregar estilos específicos para pantallas grandes si es necesario */
+  }
+  
