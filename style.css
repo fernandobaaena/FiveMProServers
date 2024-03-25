@@ -64,11 +64,13 @@ nav {
 }
 ul{
     list-style: none;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
 }
 a{
     text-decoration: none;
 }
-
 /* Cosas generales */
 .title-main{
     margin-top: 15%;
@@ -82,11 +84,13 @@ a{
 }
 .text-articles{
     font-size: 1.7rem;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 .why-choose-text{
     margin-right: 20%;
     margin-left: 20%;
+    text-align: left;
+    word-break: keep-all;
 }
 .redes{
     display: flex;
@@ -98,11 +102,12 @@ img{
 
 }
 /* Estilos específicos para el formulario */
-.contact {
-    margin-top: 5%; /* Ajustar según sea necesario */
+footer {
+    margin-top: 5%;
+    margin-bottom: 2%;
     padding: 2rem; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Sombra ligera */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
 }
 
 .contact label {
@@ -235,6 +240,7 @@ img{
     .nav-bar li a {
       font-size: 1.5rem; /* Ajustar el tamaño del texto de navegación */
     }
+
   }
 
   
