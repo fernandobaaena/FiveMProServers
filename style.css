@@ -19,6 +19,10 @@ body{
     align-items: center;
     min-height: 100vh;
     scroll-behavior: smooth;
+    background: url(cool-background.svg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 main {
     text-align: center; /
@@ -46,7 +50,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-
 .nav-bar li {
     display: inline;
 }
@@ -101,14 +104,21 @@ img{
     width: 105px;
 
 }
-/* Estilos específicos para el formulario */
-footer {
-    margin-top: 5%;
-    margin-bottom: 2%;
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+.card-testimony-1, .card-testimony-2{
+    padding: 1.8rem;
+    width: 20.0rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+.card-testimony-1{
+    margin-left: 20%;
+}
+.card-testimony-2{
+    margin-left: 60%;
+}
+/* Estilos específicos para el formulario */
+
 
 .contact label {
     display: block; /* Para que cada etiqueta esté en una línea */
@@ -220,12 +230,24 @@ footer {
         font-size: 2.5rem;
         margin-top: 5%;
     }
+    .card-testimony-1,
+    .card-testimony-2 {
+        width: 80%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-bottom: 3rem;
+    }
+    footer {
+        margin-top: 5%;
+        margin-bottom: 2%;
+        padding: 2rem; /* Espaciado interno */
+    }
   }
   
   /* Media query para tabletas y pantallas medianas */
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .title-main {
-      margin-bottom: 15%; /* Ajustar el espacio entre el título principal y el siguiente elemento */
+      margin-bottom: 15%; 
     }
   
     .nav-bar {
@@ -240,7 +262,26 @@ footer {
     .nav-bar li a {
       font-size: 1.5rem; /* Ajustar el tamaño del texto de navegación */
     }
-
-  }
+    .card-testimony-1,
+    .card-testimony-2 {
+        width: 40%; 
+        margin-bottom: 3rem;
+    }
+    .card-testimony-1{
+        margin-left: 5%;
+    }
+    .card-testimony-2{
+        margin-left: 55%;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    footer {
+        margin-top: 5%;
+        margin-bottom: 2%;
+        padding: 2rem; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    }
+}
 
   
